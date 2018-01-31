@@ -12,22 +12,20 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="http://via.placeholder.com/350x150" alt="logo" class "img_logo">
+        <a href="#" class="logo_link"><img src="http://via.placeholder.com/350x150" alt="logo" class="logo_img"></a>
       </div>
       <nav class="main_menu">
-        <ul>
-          <li><a class="menu_link" href="#" src="#">Расписание</a>
+        <ul class="nav">
+          <li class="nav_link"><a href="#" src="#">Расписание</a>
           </li>
-          <li><a class="menu_link-active" href="#" src="#">Инструкторы</a>
+          <li class="nav_link-active"><a href="#" src="#">Инструкторы</a>
           </li>
-          <li><a class="menu_link" href="#" src="#">Стоимость</a>
+          <li class="nav_link"><a href="#" src="#">Стоимость</a>
           </li>
-          <li><a class="menu_link" href="#" src="#">Как добраться</a>
-          </li>
-        </ul>
+          <li class="nav_link"><a href="#" src="#">Как добраться</a>
       </nav>
-      <div class="phone"><a href="tel:88008080" class="phone_link">8 (800) 800-80-80</a>
-      </div> <a href="#" class="btn">Записаться</a>
+      <a href="tel:88008080" class="phone">8 (800) 800-80-80</a>
+      <a href="#" class="btn">Записаться</a>
     </div>
   </header>
   <main>
@@ -37,41 +35,73 @@
         <div class="instructors_search">
           <form action="#">
             <input type="search" name="q" id="ac" placeholder="Начните вводить имя" autocomplete="off">
-            <!-- здесь должна быть кнопка поиска -->
+            <input type="submit">
           </form>
         </div>
-        <div class="instructors_gallery"> <a href=""><span>Арсений Петров</span><img src="" alt=""></a>
+        <div class="instructors_gallery">
           <a href="">
-            <img src="" alt="">
-          </a> <a href=""><span>Степан Александров</span><img src="" alt=""></a>
-          <a href=""><span>Константин Константинопольский</span><img src="" alt=""></a>
-          <a href=""><span>Виталий Сергеев</span><img src="" alt=""></a>
+            <figure>
+              <img src="" alt="">
+              <figcaption>Арсений Петров</figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+              <img src="" alt="">
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+              <img src="" alt="">
+            <figcaption>Степан Александров</figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+             <img src="" alt="">
+             <figcaption>Константин Константинопольский</figcaption>
+            </figure>
+          </a>
+          <a href="">
+            <figure>
+              <img src="" alt="">
+              <figcaption>Виталий Сергеев</figcaption>
+            </figure>
+          </a>
         </div>
         <article class="rider">
-          <h2>Константин Константинопольский</h2>
           <img src="" alt="">
-          <div class="sport">
-            <p>Спорт</p>
-            <img src="" alt="лыжи">
-          </div>
-          <div class="experience">
-            <p>Стаж катания</p>
-          </div>
-          <div class="style">
-            <p>Стиль</p>
-            <a href="">#allround</a>
-            <a href="">#freeride</a>
-            <a href="">#skillcross</a>
-          </div>
-          <div class="choose"> <a href="" class="choose-btn"><span>Записаться</span></a>
-          </div>
-          <div class="likes">
-            <a href="" class="likes-btn">
-              <img src="" alt="молния">
-            </a>
-            <p>Спасибо!</p>
+          <div class="rider_desc">
+            <div class="rider_desc-title">
+            <h2>Константин Константинопольский</h2>
+            <a href="" class="choose-btn">Записаться</a>
+            </div>
+            <div class="rider_desc-info">
+              <div class="sport">
+                <p>Спорт</p>
+              </div>
+              <div class="experience">
+                <p>Стаж катания</p>
+              </div>
+              <div class="style">
+                <p>Стиль</p>
+                <a href="">#allround</a>
+                <a href="">#freeride</a>
+                <a href="">#skillcross</a>
+              </div>
+              <div class="likes">
+                <a href="" class="likes-btn"></a>
+                <p>Спасибо!</p>
+              </div>
+            </div>
           </div>
         </article>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+      <div class="rider_performace">
         <article class="educ">
           <h3>Образование</h3>
           <p></p>
@@ -81,16 +111,42 @@
         <div class="video">
           <!-- здесь должен быть ролик -->
         </div>
+      </div>
         <article class="comment">
-          <h3>Марина Ильина</h3>
-          <a href="" src=""></a>
+          <h3><a href="" src="">Марина Ильина</a></h3>
           <p></p>
         </article>
-        <div class="instructors_gallery"> <a href=""><span>Иван Артемов</span><img src="" alt=""></a>
-          <a href=""><span>Петр Иванов</span><img src="" alt=""></a>
-          <a href=""><span>Андрей Степанов</span><img src="" alt=""></a>
-          <a href=""><span>Данила Алексеев</span><img src="" alt=""></a>
-          <a href=""><span>Дмитрий Егоров</span><img src="" alt=""></a>
+        <div class="instructors_gallery">
+          <a href="">
+            <figure>
+            <img src="" alt="">
+            <figcaption>Иван Артемов</figcaption>
+          </figure>
+          </a>
+          <a href="">
+            <figure>
+            <img src="" alt="">
+            <figcaption>Петр Иванов</figcaption>
+          </figure>
+          </a>
+          <a href="">
+            <figure>
+            <img src="" alt="">
+            <figcaption>Андрей Степанов</figcaption>
+          </figure>
+          </a>
+          <a href="">
+            <figure>
+            <img src="" alt="">
+            <figcaption>Данила Алексеев</figcaption>
+          </figure>
+          </a>
+          <a href="">
+            <figure>
+            <img src="" alt="">
+            <figcaption>Дмитрий Егоров</figcaption>
+          </figure>
+          </a>
         </div>
       </div>
     </section>
@@ -98,18 +154,19 @@
   <footer>
     <div class="container">
       <div class="logo">
-        <img src="http://via.placeholder.com/350x150" alt="logo" class "img_logo">
+        <a href="#" class="logo_link"><img src="http://via.placeholder.com/350x150" alt="logo" class="logo_img"></a>
       </div>
       <div class="social_links">
-        <a href="" class="youtube" src=""></a>
-        <a href="" class="instagram" src=""></a>
-        <a href="" class="fb" src=""></a>
-        <a href="" class="vk" src=""></a>
+        <ul class="list">
+          <li class="list_item"><a href="#" src="" class="youtube"></a></li>
+          <li class="list_item"><a href="#" src="" class="instagram"></a></li>
+          <li class="list_item"><a href="#" src="" class="fb"></a></li>
+          <li class="list_item"><a href="#" src="" class="vk"></a></li>
+        </ul>
       </div>
-      <div class="phone"> <a href="tel:88008080" class="phone_link">8 (800) 800-80-80</a>
-      </div>
-      <div class="email">
-        <a href="mailto:hello@iceace.com"></a>
+      <div class="connect">
+        <a href="tel:88008080" class="phone">8 (800) 800-80-80</a>
+        <a href="mailto:hello@iceace.com" class="mail">hello@iceace.com</a>
       </div>
       <div class="copyright">
         <p>&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
