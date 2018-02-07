@@ -1,0 +1,369 @@
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../fonts/subset-FuturaPT-Book.woff') format('woff'),
+       url('../fonts/subset-FuturaPT-Book.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../fonts/subset-FuturaPT-Medium.woff') format('woff'),
+       url('../fonts/subset-FuturaPT-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../fonts/subset-FuturaPT-Demi.woff') format('woff'),
+       url('../fonts/subset-FuturaPT-Demi.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src:  url('../fonts/subset-FuturaPT-Heavy.woff') format('woff'),
+        url('../fonts/subset-FuturaPT-Heavy.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../fonts/subset-FuturaPT-ExtraBold.woff') format('woff'),
+       url('../fonts/subset-FuturaPT-ExtraBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/subset-PTSans-Regular.woff') format('woff'),
+       url('../fonts/subset-PTSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: FuturaPT, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  /* width: 1280px;
+  height: 5925px; */
+}
+
+.container {
+  width: 1280px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 900;
+  color: #fff;
+}
+
+h1 span {
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+.advantage h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.offer h3 {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.offer p {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.offer span {
+  color: #83eba5;
+}
+
+p {
+  font-family: PTSans, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-menu {
+  font-size: 15px;
+  line-height: 70px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer .main-menu {
+  opacity: .8;
+}
+
+.phone,
+.mail {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.service_links {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: .9;
+}
+
+.copyright {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.btn_join {
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 65,16px;
+  font-weight: 700;
+  color: #74e196;
+  text-transform: uppercase;
+  border: 2px solid #000;
+}
+
+.btn_join:hover {
+  font-family: FuturaPT, sans-serif;
+  font-size: 15px;
+  line-height: 65,16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: #74e196;
+}
+
+.btn_join:active {
+  font-size: 15px;
+  line-height: 65,16px;
+  font-weight: 700;
+  color: #74e196;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.btn_select {
+  font-size: 15px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #74e196;
+  text-transform: uppercase;
+}
+
+.btn_darkbg {
+  border: 2px solid #fff;
+}
+
+.btn_darkbg:hover {
+  border: 2px solid #fff;
+}
+
+.btn_darkbg:active {
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.likes-btn {
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+.likes-btn:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 26px;
+  background: url(../img/sprite.png) -771px -5px;
+}
+
+.services {
+  color: #000;
+}
+
+.advantages {
+  color: #000;
+}
+
+.promo {
+  background: url(../img/bg_indexpromo.jpg) top;
+  width: 1280px;
+  height: 645px;
+}
+
+.offers {
+  color: #fff;
+  background: url(../img/bg_offers.jpg) 50% 50% no-repeat;
+}
+
+.team_info {
+  background: url(../img/bg_team.jpg) 50% 50% no-repeat;
+  width: 954px;
+  height: 666px;
+}
+
+footer {
+  background: url(../img/bg_footer.jpg) 50% 50% no-repeat;
+}
+
+.list_item{
+  display: inline-block;
+}
+
+.list_item:hover {
+  border-bottom: 3px solid #74e196;
+}
+
+.link-active {
+  border-bottom: 3px solid #74e196;
+}
+
+.gallery .list_item {
+  padding-right: 16px;
+}
+
+.social-links .list_item {
+  display: block;
+  background-image: url(../img/sprite.png);
+  height: 40px;
+}
+
+.youtube {
+  background-position: -555px -5px;
+  width: 32px;
+}
+
+.instagram {
+  background-position: -463px -5px;
+  width: 32px;
+}
+
+.fb {
+  background-position: -435px -5px;
+  width: 18px;
+}
+
+.vk {
+  background-position: -505px -5px;
+  width: 40px;
+}
+
+.offer {
+  display: inline-block;
+}
+
+.advantage {
+  display: inline-block;
+}
+
+.advantage-one:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 61px;
+  background: url(../img/sprite.png) -234px -5px;
+}
+
+.advantage-two:before {
+  content: "";
+  display: block;
+  width: 53px;
+  height: 61px;
+  background: url(../img/sprite.png) -372px -5px;
+}
+
+.advantage-three:before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 61px;
+  background: url(../img/sprite.png) -304px -5px;
+}
+
+.advantage-four:before {
+  content: "";
+  display: block;
+  width: 61px;
+  height: 75px;
+  background: url(../img/sprite.png) -163px -5px;
+}
+
+.advantage-five:before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 71px;
+  background: url(../img/sprite.png) -5px -5px;
+}
+
+.advantage-six:before {
+  content: "";
+  display: block;
+  background: url(../img/sprite.png) -73px -5px;
+  width: 80px;
+  height: 55px;
+}
+
+.service_more {
+  display: block;
+  width: 37px;
+  height: 27px;
+  background:url(../img/sprite.png) -597px -5px;
+}
+
+.sport:after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 71px;
+  background:url(../img/sprite.png) -644px -5px;
+}
