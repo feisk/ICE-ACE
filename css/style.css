@@ -56,60 +56,10 @@ body {
   font-weight: 400;
   color: #000;
   background-color: #fff;
-  /* width: 1280px;
-  height: 5925px; */
 }
 
-.container {
-  width: 1280px;
-}
-
-h1 {
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: 900;
-  color: #fff;
-}
-
-h1 span {
-  font-size: 38px;
-  line-height: 40px;
-  font-weight: 600;
-  color: #fff;
-}
-
-h2 {
-  font-size: 40px;
-  line-height: 35px;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 20px;
-  line-height: 70px;
-  font-weight: 500;
-}
-
-.advantage h3 {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 500;
-}
-
-.offer h3 {
-  font-size: 22px;
-  line-height: 35px;
-  font-weight: 500;
-}
-
-.offer p {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: 400;
-}
-
-.offer span {
-  color: #83eba5;
+a {
+  text-decoration: none;
 }
 
 p {
@@ -119,52 +69,92 @@ p {
   font-weight: 400;
 }
 
-a {
-  text-decoration: none;
+h2 {
+  font-size: 40px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: 500;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.promo {
+  padding-top: 100px;
+  background: url(../img/bg_indexpromo.jpg) center no-repeat;
+  height: 550px;
+}
+
+.promo__title {
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.promo__title-span {
+  display: block;
+  margin-top: 30px;
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header {
+padding: 35px 0;
+}
+
+.logo {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 160px;
+  float: left;
+  vertical-align: middle;
 }
 
 .main-menu {
-  font-size: 15px;
-  line-height: 70px;
-  font-weight: 500;
-  text-transform: uppercase;
+  float: left;
+  text-align: center;
 }
 
-footer .main-menu {
-  opacity: .8;
+.main-menu__list {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-.phone,
-.mail {
-  font-size: 22px;
-  line-height: 35px;
-  font-weight: 600;
+.main-menu__item {
+  display: inline-block;
+  margin: 0 20px;
 }
 
-.description {
-  font-size: 20px;
-  line-height: 35px;
-  font-weight: 500;
+.phone {
+  float: left;
+  margin: 20px;
 }
 
-.service_links {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
-  opacity: .9;
-}
-
-.copyright {
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 600;
-}
-
-.btn_join {
-  padding: 10px 15px;
+.btn__join {
+  display: inline-block;
+  margin: 10px;
+  float: right;
+  width: 135px;
+  padding: 10px;
   font-size: 15px;
   line-height: 65,16px;
   font-weight: 700;
+  text-align: center;
   color: #74e196;
   text-transform: uppercase;
   border: 2px solid #000;
@@ -189,6 +179,91 @@ footer .main-menu {
   text-transform: uppercase;
   border: 2px solid #000;
   background: #fff;
+}
+
+.services__desc {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  margin-top: 40px;
+  float: left;
+  width: 360px;
+} 
+
+.services__item--width {
+  width: 758px;
+  margin-left: 40px;
+}
+
+.services__photo {
+float: left;
+padding-right: 40px;
+}
+
+
+/* Дальше буду еще править */
+
+
+.advantage h3 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.offer h3 {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.offer p {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.offer span {
+  color: #83eba5;
+}
+
+.main-menu {
+  font-size: 15px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .main-menu {
+  opacity: .8;
+}
+
+.phone,
+.connect__mail {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 700;
+}
+
+.services__desc {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+.services__links {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: .9;
+}
+
+.copyright {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 600;
 }
 
 .btn_select {
@@ -226,18 +301,20 @@ footer .main-menu {
   background: url(../img/sprite.png) -771px -5px;
 }
 
+/* распорка */
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+} 
+/* распорка */
+
 .services {
   color: #000;
 }
 
 .advantages {
   color: #000;
-}
-
-.promo {
-  background: url(../img/bg_indexpromo.jpg) top;
-  width: 1280px;
-  height: 645px;
 }
 
 .offers {
@@ -255,8 +332,9 @@ footer {
   background: url(../img/bg_footer.jpg) 50% 50% no-repeat;
 }
 
-.list_item{
+.list_item {
   display: inline-block;
+
 }
 
 .list_item:hover {
@@ -272,7 +350,6 @@ footer {
 }
 
 .social-links .list_item {
-  display: block;
   background-image: url(../img/sprite.png);
   height: 40px;
 }
