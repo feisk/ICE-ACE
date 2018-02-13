@@ -60,6 +60,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 p {
@@ -69,16 +70,17 @@ p {
   font-weight: 400;
 }
 
-h2 {
+.title-h2 {
+  margin: 0 0 40px;
+  padding: 0;
   font-size: 40px;
-  line-height: 35px;
+  /* line-height: 35px; */
   font-weight: 600;
   text-align: center;
 }
 
 h3 {
   font-size: 20px;
-  line-height: 70px;
   font-weight: 500;
 }
 
@@ -88,13 +90,13 @@ h3 {
 }
 
 .promo {
-  padding-top: 100px;
   background: url(../img/bg_indexpromo.jpg) center no-repeat;
-  height: 550px;
+  height: 645px;
 }
 
 .promo__title {
-  padding: 0;
+  width: 470px;
+  padding: 100px 0 0;
   margin: 0;
   font-size: 50px;
   line-height: 50px;
@@ -102,7 +104,7 @@ h3 {
   color: #fff;
 }
 
-.promo__title-span {
+.promo__title-normal {
   display: block;
   margin-top: 30px;
   font-size: 38px;
@@ -111,26 +113,33 @@ h3 {
   color: #fff;
 }
 
-header {
-padding: 35px 0;
+.container--header {
+  padding: 37px 0;
 }
 
+.container:after {
+  content: "";
+  display: block;
+  clear: both;
+} 
+
 .logo {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  width: 160px;
   float: left;
-  vertical-align: middle;
+  padding: 0;
+  margin-right: 20px;
+  width: 160px;
+  height: 55px;
 }
 
 .main-menu {
+  margin-top: 20px;
   float: left;
-  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .main-menu__list {
-  display: block;
   margin: 0;
   padding: 0;
 }
@@ -142,99 +151,231 @@ padding: 35px 0;
 
 .phone {
   float: left;
-  margin: 20px;
+  margin-top: 18px;
+  margin-left: 25px;
 }
 
-.btn__join {
-  display: inline-block;
-  margin: 10px;
-  float: right;
+.btn {
   width: 135px;
+  height: 46px;
   padding: 10px;
   font-size: 15px;
-  line-height: 65,16px;
   font-weight: 700;
   text-align: center;
   color: #74e196;
   text-transform: uppercase;
   border: 2px solid #000;
+  box-sizing: border-box;
 }
 
-.btn_join:hover {
-  font-family: FuturaPT, sans-serif;
-  font-size: 15px;
-  line-height: 65,16px;
-  font-weight: 700;
+.btn--join {
+  display: inline-block;
+  float: right;
+  margin-top: 6px;
+}
+
+.btn--join:hover {
   color: #fff;
-  text-transform: uppercase;
-  border: 2px solid #000;
   background: #74e196;
 }
 
-.btn_join:active {
-  font-size: 15px;
-  line-height: 65,16px;
-  font-weight: 700;
+.btn--join:active {
   color: #74e196;
-  text-transform: uppercase;
-  border: 2px solid #000;
   background: #fff;
+}
+
+.services {
+  color: #000;
 }
 
 .services__desc {
   text-align: center;
   margin: 0;
   padding: 0;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 500;
 }
 
 .services__item {
-  margin-top: 40px;
   float: left;
+  margin: 40px 40px 0 0;
+  height: 245px;
   width: 360px;
 } 
 
-.services__item--width {
-  width: 758px;
-  margin-left: 40px;
+.services__item:nth-child(3n+5) {
+  margin-right: 0;
 }
 
-.services__photo {
-float: left;
-padding-right: 40px;
+.services__links {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  opacity: .9;
 }
 
+.services__links:after {
+  content: "";
+  display: block;
+  clear: both;
+} 
 
-/* Дальше буду еще править */
+.services__span {
+  float: left;
+}
 
+.services__more {
+  float: right;
+  width: 37px;
+  height: 27px;
+  font-size: 0;
+  background:url(../img/sprite.png) -597px -5px;
+}
 
-.advantage h3 {
+.advantages {
+  font-size: 0;
+}
+
+.advantages__title {
+  margin-top: 74px;
+}
+
+.advantages__item {
+  display: inline-block;
+  width: 31%;
+  margin: 0 40px 40px 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
 }
 
-.offer h3 {
+.advantages__item-title {
+    text-align: center;
+}
+
+.advantages__item:nth-child(3n+4) {
+  margin-right: 0;
+}
+
+.advantages__item--warranty:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 61px;
+  background: url(../img/sprite.png) -234px -5px;
+}
+
+.advantages__item--skills:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 53px;
+  height: 61px;
+  background: url(../img/sprite.png) -372px -5px;
+}
+
+.advantages__item--individual:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 58px;
+  height: 61px;
+  background: url(../img/sprite.png) -304px -5px;
+}
+
+.advantages__item--equipment:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 61px;
+  height: 75px;
+  background: url(../img/sprite.png) -163px -5px;
+}
+
+.advantages__item--safety:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 58px;
+  height: 71px;
+  background: url(../img/sprite.png) -5px -5px;
+}
+
+.advantages__item--transfer:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: url(../img/sprite.png) -73px -5px;
+  width: 80px;
+  height: 55px;
+}
+
+.offers {
+  color: #fff;
+  background: url(../img/bg_offers.jpg) top no-repeat;
+  height: 362px;
+  font-size: 0;
+}
+
+.offers__title {
+  padding-top: 44px;
+  margin-bottom: 40px 0 0;
+}
+
+.offers__item {
+  text-align: center;
+  display: inline-block;
+  width: 220px;
+  margin-right: 145px;
+  vertical-align: top;
+}
+
+.offers__item:nth-child(2) {
+  margin-left: 105px;
+}
+
+.offers__item:nth-child(4) {
+  margin-right: 105px;
+}
+
+.offers__item-title {
+  margin: 0 0 20px;
   font-size: 22px;
-  line-height: 35px;
   font-weight: 500;
 }
 
-.offer p {
+.offers__item-info {
+  margin: 0;
+  padding: 0;
+  font-family: FuturaPT, Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 23px;
   font-weight: 400;
 }
 
-.offer span {
+.offers__item-span {
   color: #83eba5;
 }
 
-.main-menu {
-  font-size: 15px;
-  line-height: 70px;
-  font-weight: 700;
-  text-transform: uppercase;
+.offers__btn {
+  display: block;
+  margin: 45px auto 0;
+  border: 2px solid #fff;
 }
+
+.offers__btn:hover {
+  color: #fff;
+  background: #74e196;
+}
+
+.offers__btn:active {
+  color: #74e196;
+  background: transparent;
+}
+
+/* дальше буду править */
 
 footer .main-menu {
   opacity: .8;
@@ -243,21 +384,7 @@ footer .main-menu {
 .phone,
 .connect__mail {
   font-size: 22px;
-  line-height: 35px;
   font-weight: 700;
-}
-
-.services__desc {
-  font-size: 20px;
-  line-height: 35px;
-  font-weight: 500;
-}
-
-.services__links {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
-  opacity: .9;
 }
 
 .copyright {
@@ -274,19 +401,6 @@ footer .main-menu {
   text-transform: uppercase;
 }
 
-.btn_darkbg {
-  border: 2px solid #fff;
-}
-
-.btn_darkbg:hover {
-  border: 2px solid #fff;
-}
-
-.btn_darkbg:active {
-  border: 2px solid #fff;
-  background: transparent;
-}
-
 .likes-btn {
   font-size: 20px;
   line-height: 70px;
@@ -299,27 +413,6 @@ footer .main-menu {
   width: 15px;
   height: 26px;
   background: url(../img/sprite.png) -771px -5px;
-}
-
-/* распорка */
-.container:after {
-  content: "";
-  display: block;
-  clear: both;
-} 
-/* распорка */
-
-.services {
-  color: #000;
-}
-
-.advantages {
-  color: #000;
-}
-
-.offers {
-  color: #fff;
-  background: url(../img/bg_offers.jpg) 50% 50% no-repeat;
 }
 
 .team_info {
@@ -372,69 +465,6 @@ footer {
 .vk {
   background-position: -505px -5px;
   width: 40px;
-}
-
-.offer {
-  display: inline-block;
-}
-
-.advantage {
-  display: inline-block;
-}
-
-.advantage-one:before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 61px;
-  background: url(../img/sprite.png) -234px -5px;
-}
-
-.advantage-two:before {
-  content: "";
-  display: block;
-  width: 53px;
-  height: 61px;
-  background: url(../img/sprite.png) -372px -5px;
-}
-
-.advantage-three:before {
-  content: "";
-  display: block;
-  width: 58px;
-  height: 61px;
-  background: url(../img/sprite.png) -304px -5px;
-}
-
-.advantage-four:before {
-  content: "";
-  display: block;
-  width: 61px;
-  height: 75px;
-  background: url(../img/sprite.png) -163px -5px;
-}
-
-.advantage-five:before {
-  content: "";
-  display: block;
-  width: 58px;
-  height: 71px;
-  background: url(../img/sprite.png) -5px -5px;
-}
-
-.advantage-six:before {
-  content: "";
-  display: block;
-  background: url(../img/sprite.png) -73px -5px;
-  width: 80px;
-  height: 55px;
-}
-
-.service_more {
-  display: block;
-  width: 37px;
-  height: 27px;
-  background:url(../img/sprite.png) -597px -5px;
 }
 
 .sport:after {
