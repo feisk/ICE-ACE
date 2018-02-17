@@ -48,6 +48,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: FuturaPT, Arial, Helvetica, sans-serif;
@@ -59,100 +61,39 @@ body {
 }
 
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: #000;
 }
 
 p {
+  margin: 0;
+  padding: 0;
   font-family: PTSans, Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 22px;
   font-weight: 400;
 }
 
-.title-h2 {
-  margin: 0 0 40px;
-  padding: 0;
-  font-size: 40px;
-  /* line-height: 35px; */
-  font-weight: 600;
-  text-align: center;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 .container {
+  display: flex;
   width: 1160px;
   margin: 0 auto;
 }
 
-.promo {
-  background: url(../img/bg_indexpromo.jpg) center no-repeat;
-  height: 645px;
-}
-
-.promo__title {
-  width: 470px;
-  padding: 100px 0 0;
-  margin: 0;
-  font-size: 50px;
-  line-height: 50px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.promo__title-normal {
-  display: block;
-  margin-top: 30px;
-  font-size: 38px;
-  line-height: 40px;
+.title-usually {
+  padding: 0;
+  font-size: 40px;
   font-weight: 600;
-  color: #fff;
+  text-align: center;
 }
 
-.container--header {
-  padding: 37px 0;
-}
-
-.container:after {
-  content: "";
-  display: block;
-  clear: both;
-} 
-
-.logo {
-  float: left;
-  padding: 0;
-  margin-right: 20px;
-  width: 160px;
-  height: 55px;
-}
-
-.main-menu {
-  margin-top: 20px;
-  float: left;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.main-menu__list {
+.title-normal {
   margin: 0;
   padding: 0;
-}
-
-.main-menu__item {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.phone {
-  float: left;
-  margin-top: 18px;
-  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .btn {
@@ -168,94 +109,162 @@ h3 {
   box-sizing: border-box;
 }
 
-.btn--join {
-  display: inline-block;
-  float: right;
-  margin-top: 6px;
-}
-
-.btn--join:hover {
+.btn:hover {
   color: #fff;
   background: #74e196;
 }
 
-.btn--join:active {
+.btn:active {
   color: #74e196;
   background: #fff;
 }
 
-.services {
-  color: #000;
+/* instructors - <main> + all pages - <header>, <footer> */
+
+.promo {
+  background: url(../img/bg_indexpromo.jpg) center no-repeat;
+  height: 645px;
+}
+
+.promo__title {
+  width: 470px;
+  padding-top: 100px;
+  margin: 0;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.promo__title-main {
+  display: block;
+  margin-top: 30px;
+  font-size: 38px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.container--header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 0;
+}
+
+.logo {
+  width: 160px;
+  height: 55px;
+}
+
+.main-menu {
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  display: inline-flex;
+  margin: 0 20px;
+}
+
+.main-menu__link {
+  border: 3px solid transparent;
+}
+
+.main-menu__link:hover {
+  border-bottom-color: #74e196;
+}
+
+.main-menu__link--active {
+border-bottom-color:  #74e196;
+}
+
+.phone {
+  margin-right: 20px;
+}
+
+.container--services {
+  flex-direction: column;
 }
 
 .services__desc {
   text-align: center;
-  margin: 0;
-  padding: 0;
   font-size: 20px;
   line-height: 35px;
   font-weight: 500;
 }
 
+.services__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .services__item {
-  float: left;
-  margin: 40px 40px 0 0;
-  height: 245px;
-  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
 } 
 
-.services__item:nth-child(3n+5) {
-  margin-right: 0;
+.services__item--vertical {
+  width: 360px;
+  height: 530px;
+}
+
+.services__item--horizontal {
+  margin-left: auto;
+  width: 760px;
+  height: 245px;
+} 
+
+.services__info-desc {
+  width: 360px;
 }
 
 .services__links {
+  display: flex;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
   opacity: .9;
 }
 
-.services__links:after {
-  content: "";
-  display: block;
-  clear: both;
-} 
-
-.services__span {
-  float: left;
-}
-
 .services__more {
-  float: right;
+  font-size: 0;
   width: 37px;
   height: 27px;
-  font-size: 0;
-  background:url(../img/sprite.png) -597px -5px;
+  background: url(../img/sprite.png) -597px -5px;
 }
 
-.advantages {
-  font-size: 0;
+.container--advantages {
+  flex-direction: column;
+}
+
+.advantages__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .advantages__title {
-  margin-top: 74px;
+  /* margin-top: 74px; */
 }
 
 .advantages__item {
-  display: inline-block;
+  justify-content: center;
   width: 31%;
-  margin: 0 40px 40px 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
-}
-
-.advantages__item-title {
-    text-align: center;
-}
-
-.advantages__item:nth-child(3n+4) {
-  margin-right: 0;
 }
 
 .advantages__item--warranty:before {
@@ -314,41 +323,38 @@ h3 {
 
 .offers {
   color: #fff;
-  background: url(../img/bg_offers.jpg) top no-repeat;
+  background: url(../img/bg_offers.jpg) center no-repeat;
   height: 362px;
-  font-size: 0;
+}
+
+.container--offers {
+  flex-direction: column;
 }
 
 .offers__title {
-  padding-top: 44px;
-  margin-bottom: 40px 0 0;
+  margin: 45px 0 40px;
+}
+
+.offers__inner {
+  display: flex;
+  justify-content: space-around;
 }
 
 .offers__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
-  display: inline-block;
-  width: 220px;
-  margin-right: 145px;
-  vertical-align: top;
-}
-
-.offers__item:nth-child(2) {
-  margin-left: 105px;
-}
-
-.offers__item:nth-child(4) {
-  margin-right: 105px;
+  width: 206px;
 }
 
 .offers__item-title {
-  margin: 0 0 20px;
+  margin-bottom: 20px;
   font-size: 22px;
   font-weight: 500;
 }
 
 .offers__item-info {
-  margin: 0;
-  padding: 0;
   font-family: FuturaPT, Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -359,26 +365,94 @@ h3 {
   color: #83eba5;
 }
 
-.offers__btn {
-  display: block;
-  margin: 45px auto 0;
+.offers__join-btn {
+  margin: 48px auto 0;
   border: 2px solid #fff;
 }
 
-.offers__btn:hover {
+.offers__join-btn:hover {
   color: #fff;
   background: #74e196;
 }
 
-.offers__btn:active {
+.offers__join-btn:active {
   color: #74e196;
   background: transparent;
 }
 
-/* дальше буду править */
+.team__info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
 
-footer .main-menu {
+.team__desc {
+  background: linear-gradient(to top, #fff 0%, transparent 70%), url(../img/bg_team.jpg) center no-repeat;
+  width: 954px;
+  height: 592px;
+}
+
+.team__select-btn {
+  width: 224px;
+}
+
+.community-gallery {
+  
+}
+
+.community-gallery__list,
+.community-gallery__item {
+  display: flex;
+}
+
+.community-gallery__list {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.footer {
+  background: url(../img/bg_footer.jpg) 50% 50% no-repeat;
+}
+
+.main-menu__link--footer:hover {
   opacity: .8;
+  border: inherit;
+}
+
+.main-menu__link--footer:active {
+  opacity: inherit;
+}
+
+.socials__item {
+  display: inline-flex;
+}
+
+.socials__link {
+  background-image: url(../img/sprite.png);
+  height: 40px;
+}
+
+.socials__link--youtube {
+  background-position: -555px -5px;
+  width: 32px;
+}
+
+.socials__link--instagram {
+  background-position: -463px -5px;
+  width: 32px;
+}
+
+.socials__link--fb {
+  background-position: -435px -5px;
+  width: 18px;
+}
+
+.socials__link--vk {
+  background-position: -505px -5px;
+  width: 40px;
 }
 
 .phone,
@@ -393,13 +467,56 @@ footer .main-menu {
   font-weight: 600;
 }
 
-.btn_select {
-  font-size: 15px;
-  line-height: 70px;
-  font-weight: 700;
-  color: #74e196;
-  text-transform: uppercase;
+/* instructors - <main> */
+
+
+.sport:after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 71px;
+  background:url(../img/sprite.png) -644px -5px;
 }
+
+/* фото в круге */
+
+.course__rider-photo {
+  display: inline-block;
+  position:relative;
+  margin: 0;
+}
+
+.course__rider-img {
+  /* position:absolute; */
+  border: 3px solid #a0dcb4;
+  border-radius: 50%;
+}
+
+.course__img-caption {
+  display: inline-block;
+  /* position:absolute; */
+  /* top:  0px; */
+  padding: 10px 0;
+  width: 200px;
+  /* height: 48px; */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* галерея инструкторов */
+.gallery {
+  display: flex;
+}
+
+.gallery__link {
+}
+
+.gallery__pic {
+  margin: 0;
+}
+
 
 .likes-btn {
   font-size: 20px;
@@ -413,64 +530,4 @@ footer .main-menu {
   width: 15px;
   height: 26px;
   background: url(../img/sprite.png) -771px -5px;
-}
-
-.team_info {
-  background: url(../img/bg_team.jpg) 50% 50% no-repeat;
-  width: 954px;
-  height: 666px;
-}
-
-footer {
-  background: url(../img/bg_footer.jpg) 50% 50% no-repeat;
-}
-
-.list_item {
-  display: inline-block;
-
-}
-
-.list_item:hover {
-  border-bottom: 3px solid #74e196;
-}
-
-.link-active {
-  border-bottom: 3px solid #74e196;
-}
-
-.gallery .list_item {
-  padding-right: 16px;
-}
-
-.social-links .list_item {
-  background-image: url(../img/sprite.png);
-  height: 40px;
-}
-
-.youtube {
-  background-position: -555px -5px;
-  width: 32px;
-}
-
-.instagram {
-  background-position: -463px -5px;
-  width: 32px;
-}
-
-.fb {
-  background-position: -435px -5px;
-  width: 18px;
-}
-
-.vk {
-  background-position: -505px -5px;
-  width: 40px;
-}
-
-.sport:after {
-  content: "";
-  display: block;
-  width: 31px;
-  height: 71px;
-  background:url(../img/sprite.png) -644px -5px;
 }
