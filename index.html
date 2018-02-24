@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ICE-ACE Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -10,14 +11,14 @@
 
 <body>
   <div class="promo">
-    <div class="container">
+    <div class="container container--promo">
       <h1 class="promo__title">Школа сноуборда и горных лыж<span class="promo__title-main"> 
       в Санкт-Петербурге</span></h1>
     </div>
   </div>
   <header>
     <div class="container container--header">
-      <div class="logo">
+      <div class="logo logo--header">
         <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img">
       </div>
       <nav class="main-menu">
@@ -33,10 +34,29 @@
           </li>
           <li class="main-menu__item">
             <a href="#" src="#" class="main-menu__link">Как добраться</a>
-          </li> 
+          </li>
         </ul>
       </nav>
-      <a href="tel:88008080" class="phone">8 (800) 800-80-80</a>
+      <div class="socials socials--header">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--youtube"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--fb"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--vk"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="connect">
+        <a href="tel:88008080" class="connect__phone connect__phone--header">8 (800) 800-80-80</a>
+        <a href="mailto:hello@iceace.com" class="connect__mail connect__mail--header">hello@iceace.com</a>
+      </div>
       <a href="schedule.html" class="btn btn--join">Записаться</a>
     </div>
   </header>
@@ -57,7 +77,7 @@
             </div>
           </article>
           <article class="services__item services__item--horizontal">
-            <img src="img/service_img_2-top.jpg" alt="сноубордист" width="360" height="244" class="services__img">
+            <img src="img/service_img_2-top.jpg" alt="сноубордист" width="360" height="245" class="services__img">
             <h3 class="services__info-title title-normal">Краткий курс</h3>
             <p class="services__info-desc">Экспресс курс расчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить
               лайфхаки "как кататься как чемпион" от опытных инструкторов,подходит как для новичков, так и более опытных</p>
@@ -67,7 +87,7 @@
             </div>
           </article>
           <article class="services__item services__item--horizontal">
-            <img src="img/service_img_3-btm.jpg" alt="сноубордист" width="360" height="244" class="services__img">
+            <img src="img/service_img_3-btm.jpg" alt="сноубордист" width="360" height="245" class="services__img">
             <h3 class="services__info-title title-normal">Полный курс</h3>
             <p class="services__info-desc">Продвинутый курс для самых вдохновленных горными лыжами и сноубордом, здесь вы не только улучшите свою технику, но и получите
               много дополнительных обучающих материалов и видео-уроков от участников мировых чемпионатов, здесь вы узнаете все</p>
@@ -84,18 +104,15 @@
         <h2 class="advantages__title title-usually">Почему мы</h2>
         <div class="advantages__inner">
           <article class="advantages__item advantages__item--warranty">
-            <h3 class="advantages__item-title title-normal">100%</h3>
-            <h4 class="advantages__item-subtitle title-normal">гарантия результата</h4>
+            <h3 class="advantages__item-title title-normal">100% гарантия&nbsp;результата</h3>
             <p class="advantages__item-info">Уверены - научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
           </article>
           <article class="advantages__item advantages__item--skills">
-            <h3 class="advantages__item-title title-normal">Опытные</h3>
-              <h4 class="advantages__item-subtitle title-normal">инструкторы</h4>
+            <h3 class="advantages__item-title title-normal">Опытные инструкторы</h3>
             <p class="advantages__item-info">У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
           </article>
           <article class="advantages__item advantages__item--individual">
-            <h3 class="advantages__item-title title-normal">Индивидуальные занятия</h3>
-            <h4 class="advantages__item-subtitle title-normal"></h4>и расписание</h4>
+            <h3 class="advantages__item-title title-normal">Индивидуальные занятия и расписание</h3>
             <p class="advantages__item-info">Мы любим индивидуальный подход, поэтому все занятия с тренером - персональные, а график обучения составляете вы сами</p>
           </article>
           <article class="advantages__item advantages__item--equipment">
@@ -142,7 +159,7 @@
       </div>
     </section>
     <section class="team">
-      <div class="container">
+      <div class="container container--team">
         <article class="team__info">
           <h2 class="team__title title-usually">Команда</h2>
           <p class="team__desc">Привет! Мы — команда инструкторов ICE ACE, с нами вы научитесь кататься как настоящие асы, потому что мы знаем, что такое
@@ -162,7 +179,8 @@
     </section>
     <section class="map">
       <div class="container">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBeNuSuuCB" width="1170" height="360" frameborder="0">Адрес на карте</iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30877.336637323027!2d30.191767797968396!3d60.51837979649616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46979f5bb0555555%3A0xfa80e54d67e30fc0!2z0JLRgdC10YHQtdC30L7QvdC90YvQuSDQutGD0YDQvtGA0YIg0JjQs9C-0YDQsA!5e0!3m2!1sru!2sru!4v1519252599175"
+          width="1160" height="360" frameborder="0" style="border:0" allowfullscreen>Адрес на карте</iframe>
         </div>
     </section>
     <section class="community-gallery">
@@ -205,10 +223,10 @@
   </main>
   <footer class="footer">
     <div class="container container--footer">
-      <div class="logo">
+      <div class="logo logo--footer">
         <img src="img/ice-ace_logo.png" alt="ICE ACE" class="logo__img">
       </div>
-      <div class="socials">
+      <div class="socials socials--footer">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--youtube"></a>
@@ -224,16 +242,15 @@
           </li>
         </ul>
       </div>
-      <div class="connect">
+      <div class="connect connect--footer">
         <a href="tel:88008080" class="connect__phone phone">8 (800) 800-80-80</a>
         <a href="mailto:hello@iceace.com" class="connect__mail">hello@iceace.com</a>
       </div>
       <div class="footer__inner">
         <div class="copyright">
-          <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и</p>
-          <p class="copyright__content">горных лыж. Все права защищены</p>
+          <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
         </div>
-        <nav class="main-menu">
+        <nav class="main-menu main-menu--footer">
           <ul class="main-menu__list">
             <li class="main-menu__item">
               <a href="#" src="#" class="main-menu__link main-menu__link--footer">Расписание</a>
