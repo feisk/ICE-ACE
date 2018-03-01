@@ -11,9 +11,14 @@
 <body>
   <header>
     <div class="container container--header">
-      <div class="logo">
+      <div class="logo logo--header">
         <a href="index.html" class="logo__link">
-          <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img">
+          <!-- <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img"> -->
+          <picture class="logo__img">
+            <source srcset="img/ice-ace_logo-320.png" media="(max-width: 1159px)">
+            <source srcset="img/ice-ace_logo.png">
+            <img srcset="iimg/ice-ace_logo.png" alt="ICE ACE">
+          </picture>
         </a>
       </div>
       <nav class="main-menu">
@@ -22,28 +27,47 @@
             <a href="schedule.html" src="#" class="main-menu__link">Расписание</a>
           </li>
           <li class="main-menu__item">
-            <a href="instructors.html" src="#" class="main-menu__link main-menu__link--active">Инструкторы</a>
+            <a href="instructors.html" src="#" class="main-menu__link">Инструкторы</a>
           </li>
           <li class="main-menu__item">
             <a href="#" src="#" class="main-menu__link">Стоимость</a>
           </li>
           <li class="main-menu__item">
             <a href="#" src="#" class="main-menu__link">Как добраться</a>
-          </li> 
+          </li>
         </ul>
       </nav>
-      <a href="tel:88008080" class="phone">8 (800) 800-80-80</a>
+      <div class="socials socials--header">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--youtube"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--fb"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--vk"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="connect">
+        <a href="tel:88008080" class="connect__phone connect__phone--header">8 (800) 800-80-80</a>
+        <a href="mailto:hello@iceace.com" class="connect__mail connect__mail--header">hello@iceace.com</a>
+      </div>
       <a href="schedule.html" class="btn btn--join">Записаться</a>
     </div>
   </header>
   <main>
     <section class="instructors">
-      <div class="container">
+      <div class="container container--instructors-top">
         <h1 class="instructors__title title-usually">Инструкторы школы</h1>
         <div class="search">
           <form action="#" class="search-form">
             <input type="search" name="q" id="ac" placeholder="Начните вводить имя" autocomplete="off" class="search-place">
-            <input type="submit" class="search-btn">
+            <button type="submit" class="search-btn">
           </form>
         </div>
         <div class="gallery">
@@ -56,7 +80,7 @@
           <a href="" class="gallery__link">
             <figure class="gallery__pic">
               <img src="img/team_member_2-noname.jpg" alt="фото" width="232" height="232" class="gallery__img">
-              <figcaption class="gallery__img-caption">Без имени</figcaption>
+              <figcaption class="gallery__img-caption">Никита Павлов</figcaption>
             </figure>
           </a>
           <a href="" class="gallery__link">
@@ -99,36 +123,39 @@
               </div>
               <div class="rider__style">
                 <p class="rider__style-title">Стиль</p>
-                <a href="" class="rider__style-link">#allround</a>
-                <a href="" class="rider__style-link">#freeride</a>
-                <a href="" class="rider__style-link">#skillcross</a>
+                <a href="#" class="rider__style-link">#allround</a>
+                <a href="#" class="rider__style-link">#freeride</a>
+                <a href="#" class="rider__style-link">#skillcross</a>
               </div>
               <div class="rider__likes-meter">
-                <a href="" class="rider__like-btn btn">5</a>
+                <a href="" class="rider__like-btn">5</a>
                 <p class="rider__like-thx">Спасибо!</p>
               </div>
             </div>
           </div>
         </article>
-        <div class="rider__performace">
+        <div class="rider__performance">
           <article class="rider__education">
             <h3 class="rider__education-title title-normal">Образование</h3>
-            <p class="rider__education-info">Национальная лига инструкторов, сертификат инструктора по горным лыжам, г. Санкт-Петербург (2014 год).</p>
-            <p class="rider__education-info">Занимается горными лыжами с 2002 года. Первый взрослый разряд по горным лыжам — в 2010 г. Опыт тренерской работы с 2012 года.</p>
-            <p class="rider__education-info">3 место на чемпионате Ленинградской области по горным лыжам. 1 место на чемпионате Карелии по горным лыжам.</p>
+            <p class="rider__education-info">Национальная лига инструкторов, сертификат инструктора по&nbsp;горным&nbsp;лыжам, г. Санкт-Петербург (2014 год).</p>
+            <p class="rider__education-info">Занимается горными лыжами с 2002 года. 
+            <p class="rider__education-info">Первый взрослый разряд по горным лыжам — в 2010 г.</p> 
+            <p class="rider__education-info">Опыт тренерской работы с 2012 года.</p>
+            <p class="rider__education-info">3 место на чемпионате Ленинградской области по горным лыжам.</p>
+            <p class="rider__education-info">1 место на чемпионате Карелии по горным лыжам.</p>
           </article>
           <iframe src="https://www.youtube.com/embed/N-NEmz_KSSQ" width="593" height="395" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="rider__video">Видеоролик</iframe>
         </div>
         <article class="rider__comment comment">
-        <h3 class="comment__title title-normal"><a href="" src="" class="comment__ink">Марина Ильина</a></h3>
-        <p class="comment__desc">Костя — отличный тренер! Провела с ним всего одно занятие, чего, в принципе, мне и было достаточно. Я и раньше занималась
-        горными лыжами, и мне нужно было вспомнить и наверстать упущенное. Инструктор очень пунктуальный, вежливый и тактичный. Цели
-        я своей добилась, он помог мне вновь встать на лыжи и закрепить свои навыки даже за одно занятие.</p>
+          <h3 class="comment__title title-normal"><a href="#" class="comment__link">Марина Ильина</a></h3>
+          <p class="comment__desc">Костя — отличный тренер! Провела с ним всего одно занятие, чего, в принципе, мне&nbsp;и&nbsp;было&nbsp;достаточно. Я и раньше занималась
+          горными лыжами, и мне нужно было вспомнить и наверстать упущенное. Инструктор очень пунктуальный, вежливый и тактичный. Цели
+          я своей добилась, он помог мне вновь встать на лыжи и закрепить свои навыки даже за одно занятие.</p>
         </article>
       </div>
     </section>
     <section class="instructors">
-      <div class="container">
+      <div class="container container--instructors-bottom">
         <div class="instructors_gallery gallery">
           <a href="" class="gallery__link">
             <figure class="gallery__pic">
@@ -158,20 +185,23 @@
             <figure class="gallery__pic">
               <img src="img/team_member_10-dmitry.jpg" alt="фото" width="232" height="232" class="gallery__img">
               <figcaption class="gallery__img-caption">Дмитрий Егоров</figcaption>
-          </figure>
+            </figure>
           </a>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html" class="logo__link">
-          <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img">
-        </a>
+  <footer class="footer">
+    <div class="container container--footer">
+      <div class="logo logo--footer">
+        <!-- <img src="img/ice-ace_logo.png" alt="ICE ACE" class="logo__img"> -->
+        <picture class="logo__img">
+          <source srcset="img/ice-ace_logo-320.png" media="(max-width: 1159px)">
+          <source srcset="img/ice-ace_logo.png">
+          <img srcset="img/ice-ace_logo.png" alt="ICE ACE">
+        </picture>
       </div>
-      <div class="socials">
+      <div class="socials socials--footer">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--youtube"></a>
@@ -187,29 +217,31 @@
           </li>
         </ul>
       </div>
-      <div class="connect">
+      <div class="connect connect--footer">
         <a href="tel:88008080" class="connect__phone phone">8 (800) 800-80-80</a>
         <a href="mailto:hello@iceace.com" class="connect__mail">hello@iceace.com</a>
       </div>
-      <div class="copyright">
-        <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
+      <div class="footer__inner">
+        <div class="copyright">
+          <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
+        </div>
+        <nav class="main-menu main-menu--footer">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Расписание</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="instructors.html" src="#" class="main-menu__link main-menu__link--footer">Инструкторы</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Стоимость</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Как добраться</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Расписание</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="instructors.html" src="#" class="main-menu__link">Инструкторы</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Стоимость</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Как добраться</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </footer>
 </body>
