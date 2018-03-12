@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ICE-ACE Главная</title>
+  <title>ICE ACE Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
 
 <body>
@@ -14,15 +15,16 @@
     <div class="container container--promo">
       <h1 class="promo__title">Школа сноуборда и горных лыж<span class="promo__title-main"> 
       в Санкт-Петербурге</span></h1>
+      <a href="instructors.html" class="promo__btn-join btn">Записаться</a>
     </div>
   </div>
   <header>
-    <div class="container container--header">
+    <div class="container container--header container--header-index">
       <div class="logo logo--header">
-        <picture class="logo__img">
-          <source srcset="img/ice-ace_logo-320.png" media="(max-width: 1159px)">
+        <picture>
+          <source srcset="img/ice-ace_logo-white-320.png" media="(max-width: 1159px)">
           <source srcset="img/ice-ace_logo.png">
-          <img srcset="img/ice-ace_logo.png" alt="ICE ACE">
+          <img srcset="img/ice-ace_logo.png" alt="ICE ACE" class="logo__img">
         </picture>
       </div>
       <nav class="main-menu">
@@ -71,11 +73,10 @@
         <p class="services__desc">Для взрослых и детей 6+ / любого уровня подготовки</p>
         <div class="services__inner">
           <article class="services__item services__item--vertical">
-            <!-- <img src="img/service_img_1.jpg" alt="сноубордист" width="360" height="245" class="services__img"> -->
             <picture class="services__img">
               <source srcset="img/service_img_1-320.jpg" media="(max-width: 767px)">
               <source srcset="img/service_img_1.jpg">
-              <img srcset="img/service_img_1.jpg" alt="сноубордист">
+              <img  srcset="img/service_img_1.jpg" alt="сноубордист">
             </picture>
             <h3 class="services__info-title title-normal">Разовое посещение</h3>
             <p class="services__info-desc">Впервые здесь? Тогда эта возможность для вас. Приходите на разовое занятие и проникнитесь атмосферой школы, Познакомитесь
@@ -86,7 +87,6 @@
             </div>
           </article>
           <article class="services__item services__item--horizontal">
-            <!-- <img src="img/service_img_2-top.jpg" alt="сноубордист" width="360" height="245" class="services__img"> -->
             <picture class="services__img">
               <source srcset="img/service_img_2-top-320.jpg" media="(max-width: 767px)">
               <source srcset="img/service_img_2-top.jpg">
@@ -104,7 +104,6 @@
             </div>
           </article>
           <article class="services__item services__item--horizontal">
-            <!-- <img src="img/service_img_3-btm.jpg" alt="сноубордист" width="360" height="245" class="services__img"> -->
             <picture class="services__img">
               <source srcset="img/service_img_3-btm-320.jpg" media="(max-width: 767px)">
               <source srcset="img/service_img_3-btm.jpg">
@@ -208,7 +207,7 @@
     <section class="community-gallery">
       <div class="container container--community-gallery">
         <h2 class="community-gallery__title title-usually"><a href="">#ice_ace_community</a></h2>
-        <ul class="community-gallery__list">
+        <ul class="community-gallery__list owl-carousel">
           <li class="community-gallery__item">
             <a href="#" class="community-gallery__link">
               <img src="img/community_img_1.jpg" alt="фото" width="180" height="180" class="community-gallery__img">
@@ -295,6 +294,9 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
 

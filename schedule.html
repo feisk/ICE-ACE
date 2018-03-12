@@ -3,23 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ICE-ACE Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICE ACE Расписание</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
 
 <body>
   <header>
     <div class="container container--header">
-      <div class="logo">
+      <div class="logo logo--header">
         <a href="index.html" class="logo__link">
-          <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img">
+          <picture>
+            <source srcset="img/ice-ace_logo-320.png" media="(max-width: 1159px)">
+            <source srcset="img/ice-ace_logo.png">
+            <img srcset="img/ice-ace_logo.png" alt="ICE ACE" class="logo__img">
+          </picture>
         </a>
       </div>
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--dark">
         <ul class="main-menu__list">
           <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link main-menu__link--active">Расписание</a>
+            <a href="schedule.html" src="#" class="main-menu__link main-menu__link--active">Расписание</a>
           </li>
           <li class="main-menu__item">
             <a href="instructors.html" src="#" class="main-menu__link">Инструкторы</a>
@@ -29,29 +36,48 @@
           </li>
           <li class="main-menu__item">
             <a href="#" src="#" class="main-menu__link">Как добраться</a>
-          </li> 
+          </li>
         </ul>
       </nav>
-      <a href="tel:88008080" class="phone">8 (800) 800-80-80</a>
+      <div class="socials socials--header">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--youtube"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--fb"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--vk"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="connect">
+        <a href="tel:88008080" class="connect__phone connect__phone--header">8 (800) 800-80-80</a>
+        <a href="mailto:hello@iceace.com" class="connect__mail connect__mail--header">hello@iceace.com</a>
+      </div>
       <a href="schedule.html" class="btn btn--join">Записаться</a>
     </div>
   </header>
   <main>
     <section class="schedule">
-      <div class="container">
+      <div class="container container--schedule">
         <h1 class="schedule__title title-usually">Выбрать программу</h1>
         <table class="schedule__table">
-          <tr class="schedule__row-head">
+          <thead class="schedule__row-head">
             <th class="schedule__cell-head">Спорт</th>
             <th class="schedule__cell-head">Инструктор</th>
             <th class="schedule__cell-head">Дата</th>
             <th class="schedule__cell-head">Время</th>
             <th class="schedule__cell-head">Стоимость</th>
-              <th class="schedule__cell-head"></th>
-          </tr>
+            <th class="schedule__cell-head"></th>
+          </thead>
           <tr class="schedule__row">
             <td class="schedule__cell">Сноуборд</td>
-            <td class="schedule__cell">Константин Константинопольский</td>
+            <td class="schedule__cell"><a href="#" class="schedule__link-rider">Константин Константинопольский</a></td>
             <td class="schedule__cell">
               <time datetime="30-03-2017" class="schedule__time-data">30.03.2017</time>
             </td>
@@ -59,62 +85,95 @@
               <time datetime="12-00" class="schedule__time-data">12:00</time>
             </td>
             <td class="schedule__cell">2000 руб.</td>
-            <td class="schedule__cell"><a href="#">Записаться</a>
+            <td class="schedule__cell"><a href="#" class="schedule__link-join">Записаться</a>
             </td>
           </tr>
           <tr class="schedule__row">
             <td class="schedule__cell">Сноуборд</td>
-            <td class="schedule__cell">Константин Константинопольский</td>
+            <td class="schedule__cell"><a href="#" class="schedule__link-rider">Константин Константинопольский</a></td>
             <td class="schedule__cell">
               <time datetime="01-04-2017" class="schedule__time-data">01.04.2017</td>
             <td class="schedule__cell">
               <time datetime="12-00" class="schedule__time-data">12:00</time>
             </td>
             <td class="schedule__cell">2000 руб.</td>
-            <td class="schedule__cell"><a href="#">Записаться</a>
+            <td class="schedule__cell"><a href="#" class="schedule__link-join">Записаться</a>
             </td>
           </tr>
           <tr class="schedule__row">
-             <td class="schedule__cell">Лыжи</td>
-            <td class="schedule__cell">Степан Александров</td>
+            <td class="schedule__cell">Лыжи</td>
+            <td class="schedule__cell"><a href="#" class="schedule__link-rider">Степан Александров</a></td>
             <td class="schedule__cell">
               <time datetime="01-04-2017" class="schedule__time-data">01.04.2017</td>
             <td class="schedule__cell">
               <time datetime="13-00" class="schedule__time-data">13:00</time>
             </td>
             <td class="schedule__cell">3000 руб.</td>
-            <td class="schedule__cell"><a href="#">Записаться</a>
+            <td class="schedule__cell"><a href="#" class="schedule__link-join">Записаться</a>
             </td>
           </tr>
           <tr class="schedule__row">
              <td class="schedule__cell">Лыжи</td>
-             <td class="schedule__cell">Виталий Сергеев</td>
+             <td class="schedule__cell"><a href="#" class="schedule__link-rider">Виталий Сергеев</a></td>
              <td class="schedule__cell">
               <time datetime="03-04-2017" class="schedule__time-data">03.04.2017</td>
              <td class="schedule__cell">
               <time datetime="14-00" class="schedule__time-data">14:00</time>
             </td>
              <td class="schedule__cell">4000 руб.</td>
-             <td class="schedule__cell"><a href="#">Записаться</a>
+             <td class="schedule__cell"><a href="#" class="schedule__link-join">Записаться</a>
             </td>
           </tr>
           <tr class="schedule__row">
              <td class="schedule__cell">Сноуборд</td>
-             <td class="schedule__cell">Арений Петров</td>
+             <td class="schedule__cell"><a href="#" class="schedule__link-rider">Арений Петров</a></td>
              <td class="schedule__cell">
               <time datetime="04-04-2017" class="schedule__time-data">04.04.2017</td>
              <td class="schedule__cell">
               <time datetime="14-00" class="schedule__time-data">14:00</time>
             </td>
              <td class="schedule__cell">4000 руб.</td>
-             <td class="schedule__cell"><a href="#">Записаться</a>
+             <td class="schedule__cell"><a href="#" class="schedule__link-join">Записаться</a>
             </td>
           </tr>
         </table>
+        <form action="post" class="schedule__form">
+          <label for="sports" class="schedule__title-select">Спорт</label>
+          <select name="sports" id="sports" class="schedule__select">
+            <option class="schedule__item" selected>Выберите вид спорта</option>
+            <option class="schedule__item">Лыжи</option>
+            <option class="schedule__item">Сноуборд</option>
+          </select>
+          <label for="instructors" class="schedule__title-select">Инструктор</label>
+          <select name="instructors" id="instructors" class="schedule__select">
+            <option value="" class="schedule__item" selected>Выберите инструктора</option>
+            <option value="" class="schedule__item">Константин Константинопольский</option>
+            <option value="" class="schedule__item">Степан Александров</option>
+            <option value="" class="schedule__item">Виталий Сергеев</option>
+            <option value="" class="schedule__item">Арений Петров</option>
+          </select>
+          <label for="date" class="schedule__title-select">Дата</label>
+          <input type="date" name="calendar" id="date" class="schedule__select schedule__select--date" value="2017-04-03" min="2017-03-30" max="2017-04-04">
+          <label for="time" class="schedule__title-select">Время</label>
+          <input type="time" id="time" class="schedule__select schedule__select--time" value="11:00" min="12:00" max="14:00">
+          <label for="price" class="schedule__title-select">Стоимость</label>
+          <select name="price" id="price" class="schedule__select">
+            <option class="schedule__item" selected>Выберите стоимость</option>
+            <option value="2000" class="schedule__item">2000 р.</option>
+            <option value="3000" class="schedule__item">3000 р.</option>
+            <option value="4000" class="schedule__item">4000 р.</option>
+          </select>
+        </form>
+        <a href="instructors.html" id="" class="schedule__btn-join btn">Записаться</a>
         <article class="schedule__course course">
           <a href="" class="course__rider-link">
             <figure class="course__rider-photo">
-              <img src="img/team_member_konstantin-big.jpg" alt="фото" width="189" height="189" class="course__rider-img">
+              <!-- <img src="" alt="фото" width="189" height="189" class="course__rider-img"> -->
+              <picture>
+                <source srcset="img/team_member_4-konstantin-320.jpg" media="(max-width: 767px)">
+                <source srcset="img/team_member_4-konstantin.jpg">
+                <img srcset="img/team_member_4-konstantin.jpg" alt="инструктор" class="course__rider-img">
+              </picture>
               <figcaption class="course__img-caption">Константин Константинопольский</figcaption>
             </figure>
           </a>
@@ -134,7 +193,7 @@
       </div>
     </section>
     <section class="call">
-      <div class="container">
+      <div class="container container--call">
         <div class="call__order">
           <h2 class="call__title">Заказать обратный звонок</h2>
           <form action="#" method="post" class="call__form">
@@ -156,14 +215,18 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="container">
-      <div class="logo">
+  <footer class="footer">
+    <div class="container container--footer">
+      <div class="logo logo--footer">
         <a href="index.html" class="logo__link">
-          <img src="img/ice-ace_logo.png" width="160" height="55" alt="ACE ICE" class="logo__img">
+          <picture class="logo__img">
+            <source srcset="img/ice-ace_logo-320.png" media="(max-width: 1159px)">
+            <source srcset="img/ice-ace_logo.png">
+            <img srcset="iimg/ice-ace_logo.png" alt="ICE ACE">
+          </picture>
         </a>
       </div>
-      <div class="socials">
+      <div class="socials socials--footer">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--youtube"></a>
@@ -179,31 +242,36 @@
           </li>
         </ul>
       </div>
-      <div class="connect">
+      <div class="connect connect--footer">
         <a href="tel:88008080" class="connect__phone phone">8 (800) 800-80-80</a>
         <a href="mailto:hello@iceace.com" class="connect__mail">hello@iceace.com</a>
       </div>
-      <div class="copyright">
-        <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
+      <div class="footer__inner">
+        <div class="copyright">
+          <p class="copyright__content">&copy; 2017 "ACE ICE" - школа сноуборда и горных лыж. Все права защищены</p>
+        </div>
+        <nav class="main-menu main-menu--footer">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Расписание</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="instructors.html" src="#" class="main-menu__link main-menu__link--footer">Инструкторы</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Стоимость</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#" src="#" class="main-menu__link main-menu__link--footer">Как добраться</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Расписание</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="instructors.html" src="#" class="main-menu__link">Инструкторы</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Стоимость</a>
-          </li>
-          <li class="main-menu__item">
-            <a href="#" src="#" class="main-menu__link">Как добраться</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </footer>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/owl.carousel.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
