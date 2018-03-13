@@ -8,7 +8,6 @@
   @media (max-width: $screen-sm)
     padding: 63px 15px 0
     margin-bottom: 0px
-
 .schedule
   &__title
     margin-bottom: 33px
@@ -76,44 +75,175 @@
   &__title-select
     margin-bottom: -3px
   &__select
+    height: 28px
     padding-left: 10px
     font-family: PTSans, Arial, Helvetica, sans-serif
     font-size: 12px
     line-height: 22px
+    color: rgba(0, 0, 0, 0.6)
     border: 1px solid #000
     border-radius: 0
     -webkit-appearance: none
-    color: rgba(0, 0, 0, 0.6)
-
+    box-sizing: border-box
 .course
   display: flex
-  padding: 58px 47px
+  width: 100%
+  align-items: flex-start
+  padding: 51px 58px 49px 
   border: 2px solid #000
+  box-sizing: border-box
+  @media (max-width: $screen-md)
+    padding: 49px 48px 49px 57px
   @media (max-width: $screen-sm)
     flex-direction: column
-    padding-right: 48px
+    position: relative
+    padding: 16px 10px 9px 
     border: 1px solid #000
   &__rider-photo
     position: relative
     margin: 0
+    margin-right: 106px
+    @media (max-width: $screen-md)
+      margin-right: 30px
+    @media (max-width: $screen-sm)
+      align-self: center
+      margin-right: 0
+      margin-bottom: 20px
   &__rider-img
-    width: 204px
-    height: 204px
+    width: 195px
+    height: 195px
     border: 3px solid #a0dcb4
     border-radius: 50%
+    box-sizing: border-box
     @media (max-width: $screen-md)
-      width: 144px
-      height: 144px
+      width: 138px
+      height: 138px
     @media (max-width: $screen-sm)
-      width: 91px
-      height: 91px
+      width: 79px
+      height: 79px
   &__img-caption
+    position: absolute
+    bottom: -10px
+    left: -2.5px
+    min-width: 200px
+    min-height: 48px
+    padding-top: 5px
+    text-align: center
+    font-size: 15px
+    font-weight: 400
+    line-height: 18px
+    color: #fff
+    background-color: #000
+    box-sizing: border-box
+    @media (max-width: $screen-md)
+      left: -2px
+      padding-top: 0
+      min-width: 142px
+      min-height: 38px
+      font-size: 12px
+    @media (max-width: $screen-sm)
+      bottom: -17px
+      left: -34px
+      padding-top: 2px
+      min-width: 147px
+      min-height: 42px
+      font-size: 14px
+  &__img-caption-span
+    display: block
+  &__info
+    margin-right: 138px
+    @media (max-width: $screen-md)
+      margin-right: 85px
+    @media (max-width: $screen-sm)
+      margin-right: 0
+  &__title
+    margin-top: -6px
+    margin-bottom: 8px
+    font-weight: 600
+    font-size: 30px
+    line-height: 35px
+    @media (max-width: $screen-md)
+      margin-top: -2px
+      font-size: 14px
+      margin-bottom: -3px
+    @media (max-width: $screen-sm)
+      margin-top: 0
+      margin-bottom: -8px
+  &__data
+    font-size: 15px
+    line-height: 25px
+    @media (max-width: $screen-md)
+      font-size: 14px
+    @media (max-width: $screen-sm)
+      color: rgba(0, 0, 0, 0.8)
+      font-size: 12px
+  &__subtitle
+    margin: 0
+    font-weight: 500
+    font-size: 20px
+    line-height: 55px
+    @media (max-width: $screen-md)
+      font-size: 14px
+    @media (max-width: $screen-sm)
+      line-height: 28px
+  &__desc
+    margin-bottom: 16px
+    padding-right: 60px
+    @media (max-width: $screen-md)
+      margin-bottom: 61px
+      padding-right: 2px
+      font-size: 12px
+      line-height: 1
+    @media (max-width: $screen-sm)
+      padding-right: 0
+      margin-bottom: 12px
+      color: rgba(0, 0, 0, 0.8)
+  &__more
+    padding-bottom: 4px
+    font-family: PTSans, Arial, Helvetica, sans-serif
+    font-size: 15px
+    line-height: 22px
+    border-bottom: 2px solid #74e196
+    @media (max-width: $screen-sm)
       position: absolute
-      bottom: 0px
-      padding: 0 10px
-      min-width: 200px
-      min-height: 48px
-      text-align: center
-      color: #fff
-      background-color: #000
+      bottom: 9px
+      right: 10px
+      padding-bottom: 1px
+      font-size: 14px
+  &__buy
+    display: flex
+    flex-direction: column
+  &__price
+    margin-bottom: 20px
+    font-family: FuturaPT, Arial, Helvetica, sans-serif
+    font-size: 30px
+    line-height: 1.2
+    font-weight: 500
+    @media (max-width: $screen-md)
+      margin-bottom: 19px
+      font-size: 14px
+    @media (max-width: $screen-sm)
+      margin-bottom: 12px
+      font-size: 16px
+      font-weight: 700
+  &__price-span-sm
+    display: none
+    @media (max-width: $screen-sm)
+      display: inline-flex
+  &__price-span
+    @media (max-width: $screen-sm)
+      display: none
+  &__buy-btn
+    min-width: 135px
+    @media (max-width: $screen-md)
+      min-width: 91px
+      padding: 6.5px
+      font-size: 14px
+    @media (max-width: $screen-sm)
+      min-width: 135px
+      text-transform: none
+      font-size: inherit
+      padding: 13.5px 19px
 
+
+      
