@@ -7,7 +7,6 @@
   <title>ICE ACE Расписание</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
 </head>
 
@@ -191,24 +190,21 @@
     </section>
     <section class="call">
       <div class="container container--call">
-        <div class="call__order">
-          <h2 class="call__title">Заказать обратный звонок</h2>
-          <form action="#" method="post" class="call__form">
-            <label class="call__form-title"><sup>*</sup>Имя
-              <input type="text" name="firstname" class="call__form-input">
-            </label>
-            <label class="call__form-title"><sup>*</sup>Фамилия
-              <input type="text" name="lastname" class="call__form-input">
-            </label>
-            <label class="call__form-title"><sup>*</sup>Телефон
-              <input type="text" name="phone" class="call__form-input">
-            </label>
-            <label class="call__form-title">Ваше сообщение
-              <textarea name="comment" rows="5" class="call__form-input"></textarea>
-            </label>
-            <input type="submit" value="отправить" class="call__send-btn btn">
-          </form>
-        </div>
+        <h2 class="call__title">Заказать обратный звонок</h2>
+        <form action="#" method="post" class="call__form">
+          <label for="firstname" class="call__form-label">
+            *Имя</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Введите ваше имя" class="call__form-input">
+          <label for="lastname" class="call__form-label">
+            *Фамилия</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Введите вашу фамилию" class="call__form-input">
+          <label for="phone" class="call__form-label">
+            *Телефон</label>
+          <input type="text" id="phone" name="phone" placeholder="8-(965)-075-53-12" pattern="[8]{1}[0-9]{10}" class="call__form-input">
+          <label for="comment" class="call__form-label">Ваше сообщение</label>
+          <textarea name="comment" id="comment" placeholder="Оставьте свой комментарий по желанию" class="call__form-input"></textarea>
+          <input type="submit" value="отправить" class="call__form-send btn">
+        </form>
       </div>
     </section>
   </main>
